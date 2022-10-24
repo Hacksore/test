@@ -1,4 +1,4 @@
-name: success
+name: Build and Deploy (succeeds)
 
 on:
   push:
