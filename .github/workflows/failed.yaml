@@ -1,4 +1,4 @@
-name: failed
+name: Build and Deploy (fails)
 
 on:
   push:
