@@ -1,5 +1,5 @@
 
-name: Build and Deploy (succeeds)
+name: Long (succeeds)
 
 on:
   push:
