@@ -14,4 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Test
-        run: sleep 300 && echo stuffz && exit 0
+        run: |
+          for OUTPUT in $(seq 100); do
+            echo "deez"
+            sleep 3
+          done
