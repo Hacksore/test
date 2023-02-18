@@ -3,7 +3,7 @@ name: Build and Deploy (succeeds)
 on:
   push:
     branches:
-      - "*"
+      - "!test"
   workflow_dispatch:
 
 jobs:
