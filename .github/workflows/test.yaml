@@ -1,9 +1,9 @@
-name: Build and Deploy (fails)
+name: Build and Deploy (succeeds)
 
 on:
   push:
     branches:
-      - "!test"
+      - "test"
   workflow_dispatch:
 
 jobs:
@@ -13,4 +13,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Test
-        run: sleep 5 && echo stuffz && exit 1
+        run: sleep 5 && echo stuffz && exit 0
+ 

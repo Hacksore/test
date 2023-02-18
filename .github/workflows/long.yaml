@@ -4,7 +4,7 @@ name: Long (succeeds)
 on:
   push:
     branches:
-      - "*"
+      - "!test"
   workflow_dispatch:
 
 jobs:
