@@ -13,6 +13,7 @@ jobs:
   comment:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "${{ secrets.GH_PAT }}"
       - uses: hacksore/must-star-action@master
         with:
           github-token: ${{ secrets.GH_PAT }}
