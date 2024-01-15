@@ -3,8 +3,8 @@ name: Check Stars on PRs and Issues
 on:
   pull_request:
     types: [opened]
-  branches:
-    - "*"
+    branches:
+      - "*"
 
   issues:
     types: [opened]
@@ -14,3 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: hacksore/must-star-action@master
+        with:
+          github-token: ${{ secrets.GH_PAT }}
