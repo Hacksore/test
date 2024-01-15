@@ -15,4 +15,5 @@ jobs:
     steps:
       - uses: hacksore/must-star-action@master
         with:
+          test: 1
           github_token: ${{ secrets.GH_PAT }}
