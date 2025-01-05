@@ -13,7 +13,8 @@ jobs:
       - name: Test
         run: |
           mv test test.old
-          echo "new line" >> test
+          # replace workd in test file with another word
+          sed 's/green/ayo/g' test.old > test
 
           diff -u --color test test.old  && echo $? || true
  
