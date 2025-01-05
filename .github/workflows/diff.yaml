@@ -15,10 +15,5 @@ jobs:
           mv test test.old
           # replace workd in test file with another word
           sed 's/green/orange/g' test.old > test
-          export TERM=xterm-256color 
-          export FORCE_COLOR=true
           diff -u --color=always test test.old  && echo $? || true
-        env:
-          TERM: term-256color 
-          FORCE_COLOR: true
  
