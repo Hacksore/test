@@ -1,0 +1,19 @@
+name: Diff
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Test
+        run: |
+          mv test test.old
+          echo "new line" >> test
+
+          diff -u --color test test.old  && echo $? || true
+ 
