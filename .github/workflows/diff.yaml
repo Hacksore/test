@@ -17,4 +17,6 @@ jobs:
           sed 's/green/ayo/g' test.old > test
 
           diff -u --color test test.old  && echo $? || true
+        env:
+          FORCE_COLOR: 1
  
