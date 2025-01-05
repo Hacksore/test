@@ -18,5 +18,6 @@ jobs:
 
           diff -u --color test test.old  && echo $? || true
         env:
-          FORCE_COLOR: 1
+          TERM: term-256color 
+          FORCE_COLOR: true
  
