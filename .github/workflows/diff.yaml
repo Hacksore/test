@@ -14,7 +14,7 @@ jobs:
         run: |
           mv test test.old
           # replace workd in test file with another word
-          sed 's/green/ayo/g' test.old > test
+          sed 's/green/orange/g' test > test
 
           diff -u --color test test.old  && echo $? || true
         env:
